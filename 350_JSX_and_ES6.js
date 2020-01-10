@@ -25,9 +25,15 @@ ReactDOM.render(
 );
 
 
-//Insdie the { } we can write any JavaScript we want, example:
+// Understand what's the difference between expression & statement in Javascript, check video
+//Insdie the { } we can write any JavaScript EXPRESSION we want,but NOT statement, example:
 
-ReactDOM.render(<h2> Random Number provided is: {Math.random()} </h2>, getElementById("root"));
+ReactDOM.render(<h2> Random Number provided is: {<h2> Math.floor(Math.random() * 10)} </h2>, getElementById("root")); //this works
+
+ReactDOM.render(<h2> Random Number provided is: {<h2>
+                if (name === "Mina")
+                  return 6;
+                </h2>, getElementById("root"));   //this WON'T work because it's a statement
 
 
 //ES6 example
