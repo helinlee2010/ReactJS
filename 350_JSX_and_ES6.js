@@ -37,7 +37,15 @@ ReactDOM.render(<h2> Random Number provided is: {<h2>
 
 
 //ES6 example
+//Template literals
+//String interpolation: injecting a string into JavaScript                
 const fName = "Suzy";
 const lName = "Bae";
 
 .....<h1> Hello {`${fName} ${lName}`} </h1>....
+
+//Other ways that are the same
+// Not limited by single set of curly braces
+ReactDOM.render(<h2> Hello {fName} {lName} </h2>......);
+// String Concatenation in JS
+ReactDOM.render(<h2> Hello {fName + " " + lName} </h2>......);                
