@@ -13,6 +13,9 @@ import ReactDOM from "react-dom";
 const date = new Date();
 const currentHour = date.getHours();
 
+//For testing, can change the time by:
+//const date = new Date(2020,1,15, 22); --> Good Evening
+
 //Declare only
 let greeting;
 
